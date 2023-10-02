@@ -1,0 +1,72 @@
+* {
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+}
+.conteiner {
+  height: 70vh;
+  width: 100vw;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h2 {
+  font-weight: 200px;
+}
+h1 {
+  font-size: 60px;
+}
+#title {
+  line-height: 20px;
+}
+li {
+  display: inline-block;
+  margin: 20px;
+}
+a:hover {
+  color: #f72611;
+  transition: 0.5 all;
+}
+a {
+  border: 2px solid  #f72611; 
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+#link:hover {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #000000;
+}
+@media screen and (max-width: 600px) {
+  /* Estilos a serem aplicados quando a largura da tela for igual ou menor que 600px */
+  ul{
+    display: flex;
+    flex-direction: inline; 
+    align-items: center;
+    margin-left: 200px;
+  }
+  img {
+    margin-left: 200px;
+  }
+  footer {
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    width: 100%;
+    background-color: #000000;
+  }
+}

@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+header {
+  padding: 30px;
+  text-align: center;
+  background: #e8e8e8;
+  color: black;
+}
+
+header h1 {
+  font-size: 50px;
+}
+nav {
+  height: 40px;
+  background-color: #660000;
+}
+ul {
+  list-style-type: none;
+  border: 1px solid #e7e7e7;
+  
+}
+li {
+  float: left;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 70px;
+}
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+#bjjA {
+  width: 200px;
+}
+#logo1 {
+  width: 250px;
+}
+.coluna-esquerda {   
+  float: left;
+  width: 70%;
+}
+aside {
+  margin-top: 20px;
+  float: left;
+  width: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.post {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+span {
+  text-decoration: underline;
+}
+/* limpa os floats */
+.conteiner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .coluna-esquerda, aside {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav a {
+    padding: 10px 15px;
+    
+  }
+}
